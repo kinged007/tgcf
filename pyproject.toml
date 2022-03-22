@@ -1,12 +1,12 @@
 [tool.poetry]
 name = "tgcf"
-version = "0.2.11.post0"
+version = "0.2.12.post0"
 description = "The ultimate tool to automate custom telegram message forwarding."
-authors = ["aahnik <daw@aahnik.dev>"]
+authors = ["kinged007"]
 license = "MIT"
 readme = "README.md"
-repository = "https://github.com/aahnik/tgcf"
-documentation = "https://github.com/aahnik/tgcf/wiki"
+repository = "https://github.com/kinged007/tgcf"
+documentation = "https://github.com/kinged007/tgcf/wiki"
 
 [tool.poetry.dependencies]
 python = "^3.8"
@@ -15,7 +15,7 @@ typer = "^0.3.2"
 python-dotenv = "^0.17.0"
 PyYAML = "^5.4.1"
 pydantic = "^1.8.1"
-Telethon = "1.21.1"
+Telethon = "1.24.0"
 cryptg = "^0.2.post2"
 Pillow = "^8.1.2"
 hachoir = "^3.1.2"
