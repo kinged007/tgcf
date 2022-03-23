@@ -18,7 +18,7 @@ class TgcfReplace(TgcfPlugin):
     def __init__(self, data: Dict[str, str]):
         self.replace = Replace(**data)
         logging.info(self.replace)
-        logging.debug("Debugging ok")
+        logging.info("Debugging ok")
 
     def modify(self, tm: TgcfMessage) -> TgcfMessage:
         msg_text: str = tm.text
@@ -27,5 +27,5 @@ class TgcfReplace(TgcfPlugin):
         for original, new in self.replace.text.items():
             msg_text = replace(original, new, msg_text, self.replace.regex)
         tm.text = msg_text
-        logging.debug("Replaced text successfully")
+        logging.info("Replaced text successfully")
         return tm
