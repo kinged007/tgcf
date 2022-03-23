@@ -26,4 +26,5 @@ class TgcfReplace(TgcfPlugin):
         for original, new in self.replace.text.items():
             msg_text = replace(original, new, msg_text, self.replace.regex)
         tm.text = msg_text
+        logging.debug("Replaced text successfully")
         return tm
