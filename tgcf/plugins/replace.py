@@ -18,6 +18,7 @@ class TgcfReplace(TgcfPlugin):
     def __init__(self, data: Dict[str, str]):
         self.replace = Replace(**data)
         logging.info(self.replace)
+        logging.debug("Debugging ok")
 
     def modify(self, tm: TgcfMessage) -> TgcfMessage:
         msg_text: str = tm.text
